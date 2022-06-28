@@ -276,7 +276,7 @@ header
 .header-area {
   background-color: rgba(250, 250, 250, 0.15);
   position: absolute;
-  top: 40px;
+  /* top: 40px; */
   left: 0;
   right: 0;
   z-index: 100;
@@ -778,6 +778,10 @@ banner
 
 @media screen and (max-width: 767px) {
 
+  .main-banner {
+    top: 13vh;
+  }
+
   .main-banner .caption h6 {
     font-weight: 500;
   }
@@ -787,6 +791,13 @@ banner
   }
 
 }
+@media screen and (max-width: 375px) {
+  .main-banner {
+    top: 14vh;
+  }
+  
+}
+
 
 
 /*
@@ -1003,7 +1014,6 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content .date {
-  float: left;
   text-align: center;
   display: inline-block;
   margin-right: 20px;
@@ -1825,7 +1835,7 @@ responsive
   }
 
   .services {
-    margin-top: 60px;
+    margin-top: 105px;
   }
 
   section.upcoming-meetings {
